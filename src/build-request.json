@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Update YES agreement message text and bullet list",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Update the YES-click agreement message content shown in the Valentine invitation screen (in frontend/src/App.tsx) so it displays exactly this headline and bullet list (and no additional trailing sentence):\n\nHeadline (exact text):\n\"By clicking YES you agree to:\"\n\nBullets (exact text, in this order):\n- \"Unlimited cuddles\"\n- \"Lifetime supply of milk\"\n- \"Unlimited sex\"\n- \"Daily minimum 1 nudes\"",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Reveal a message: “By clicking YES you agree to:\n\n- Unlimited cuddles\n- Lifetime supply of milk\n- Unlimited sex\n- Daily minimum 1 nudes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "After clicking the \"YES\" button, the agreement message becomes visible immediately.",
+        "The agreement message headline text is exactly: \"By clicking YES you agree to:\"",
+        "The agreement message shows exactly four bullet items, in the exact order and wording specified: Unlimited cuddles; Lifetime supply of milk; Unlimited sex; Daily minimum 1 nudes.",
+        "The agreement message contains no additional sentence such as \"Effective immediately! 🚀\" (or any other extra line) beyond the headline and four bullets.",
+        "All other YES-click behaviors remain unchanged (buttons hide after 1 second; confetti runs for 5 seconds)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Do not route any static assets through the backend.",
+    "Keep backend as a single Motoko actor; only add migration.mo if state schema changes (not expected for this request)."
+  ],
+  "nonGoals": [
+    "Changing the 404 screen behavior or text.",
+    "Changing YES/NO button animations, positions, or the NO-click behavior beyond preserving existing functionality.",
+    "Adding sound effects or new visual effects.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

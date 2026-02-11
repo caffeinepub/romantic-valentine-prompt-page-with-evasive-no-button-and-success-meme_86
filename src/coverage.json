@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T20:47:05.821Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Update the YES-click agreement message content shown in the Valentine invitation screen (in frontend/src/App.tsx) so it displays exactly this headline and bullet list (and no additional trailing sentence):\n\nHeadline (exact text):\n\"By clicking YES you agree to:\"\n\nBullets (exact text, in this order):\n- \"Unlimited cuddles\"\n- \"Lifetime supply of milk\"\n- \"Unlimited sex\"\n- \"Daily minimum 1 nudes\"",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

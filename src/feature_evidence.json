@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-yes-click-agreement-message-content-shown-in-the-valentine-invitation-screen-in-frontend-src-app-tsx-so-it-displays-exactly-this-headline-and-bullet-list-and-no-additional-trailing-sentence-headline-exact-text-by-clicking-yes-you-agree-to-bullets-exact-text-in-this-order-unlimited-cuddles-lifetime-supply-of-milk-unlimited-sex-daily-minimum-1-nudes",
+      "featureTitle": "Update the YES-click agreement message content shown in the Valentine invitation screen (in frontend/src/App.tsx) so it displays exactly this headline and bullet list (and no additional trailing sentence):\n\nHeadline (exact text):\n\"By clicking YES you agree to:\"\n\nBullets (exact text, in this order):\n- \"Unlimited cuddles\"\n- \"Lifetime supply of milk\"\n- \"Unlimited sex\"\n- \"Daily minimum 1 nudes\"",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

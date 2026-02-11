@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no logic.",
+  "feature_evidence.json": "Feature evidence report describing required YES-click agreement text update in App.tsx.",
+  "frontend-file-summaries.txt": "Summaries of key frontend files including App, styles, Tailwind config, and confetti component.",
+  "frontend/index.css": "Base Tailwind imports and CSS variable definitions for light/dark themes and layout primitives.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main app component handling screens, YES/NO interactions, agreement message, confetti, and moving NO button.",
+  "frontend/src/components/ConfettiOverlay.tsx": "Generates and animates 80 randomized confetti pieces using CSS animations.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor tied to Internet Identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and provider managing Internet Identity login, storage, and state.",
+  "frontend/src/index.css": "Custom romantic color palette, global styles, screen transitions, confetti effects, and floating hearts.",
+  "frontend/src/main.tsx": "React entry point wiring QueryClient, InternetIdentityProvider, and rendering App.",
+  "frontend/tailwind.config.js": "Tailwind CSS config enabling dark mode, custom color variables, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Tracks project metadata and features for a romantic Valentine web page with interactive YES/NO behavior and responsive design notes."
+}

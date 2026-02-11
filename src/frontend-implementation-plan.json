@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update YES agreement message text and bullet list",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Replace the YES-click agreement message headline and bullets on the Valentine invitation screen to match the exact provided text with no extra trailing sentence.",
+      "acceptanceCriteria": [
+        "After clicking the \"YES\" button, the agreement message becomes visible immediately.",
+        "The agreement message headline text is exactly: \"By clicking YES you agree to:\"",
+        "The agreement message shows exactly four bullet items, in the exact order and wording specified: Unlimited cuddles; Lifetime supply of milk; Unlimited sex; Daily minimum 1 nudes.",
+        "The agreement message contains no additional sentence such as \"Effective immediately! 🚀\" (or any other extra line) beyond the headline and four bullets.",
+        "All other YES-click behaviors remain unchanged (buttons hide after 1 second; confetti runs for 5 seconds)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the conditional agreement message rendered when `showAgreement` is true: keep the headline text exactly \"By clicking YES you agree to:\", replace the existing bullet items with exactly four bullets in the specified order (Unlimited cuddles; Lifetime supply of milk; Unlimited sex; Daily minimum 1 nudes), and remove the trailing sentence paragraph (e.g., \"Effective immediately! 🚀\") so only the headline and four bullets remain. Preserve existing YES-click timing/side effects (immediate reveal, hide buttons after 1s, confetti for 5s)."
+        }
+      ]
+    }
+  ]
+}

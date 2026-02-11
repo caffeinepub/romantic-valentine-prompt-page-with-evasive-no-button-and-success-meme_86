@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's Day app with three screens (404, invitation, accepted) featuring smooth in-place transitions, YES flow with updated agreement message (unlimited cuddles, lifetime supply of milk, unlimited sex, daily minimum 1 nudes) and confetti, and NO flow with click-based button jumping and gradient changes.",
+  "frontend/src/index.css": "Global styles with romantic OKLCH color palette, screen transition utilities, confetti animations, and floating heart effects for smooth state changes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom romantic color palette tokens mapped to CSS variables for consistent theming throughout the application.",
+  "frontend/src/components/ConfettiOverlay.tsx": "Lightweight confetti overlay component that renders 80 animated confetti pieces with randomized colors, positions, and timing using pure CSS animations."
+}

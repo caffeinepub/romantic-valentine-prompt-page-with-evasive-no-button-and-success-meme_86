@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        
+        /* Romantic pink and white color palette */
+        --romantic-light: oklch(0.98 0.015 350);
+        --romantic-medium: oklch(0.95 0.03 350);
+        --romantic-accent: oklch(0.92 0.05 350);
+        --romantic-muted: oklch(0.88 0.06 350);
+        --romantic-border: oklch(0.85 0.08 350);
+        --romantic-dark: oklch(0.45 0.12 350);
+        --romantic-deep: oklch(0.55 0.18 350);
+        --romantic-darker: oklch(0.45 0.18 350);
+        
+        /* Base theme colors */
+        --background: 1 0 0;
+        --foreground: 0.145 0 0;
+        --card: 1 0 0;
+        --card-foreground: 0.145 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.145 0 0;
+        --primary: 0.55 0.18 350;
+        --primary-foreground: 0.985 0 0;
+        --secondary: 0.95 0.03 350;
+        --secondary-foreground: 0.45 0.12 350;
+        --muted: 0.88 0.06 350;
+        --muted-foreground: 0.45 0.12 350;
+        --accent: 0.92 0.05 350;
+        --accent-foreground: 0.45 0.12 350;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.85 0.08 350;
+        --input: 0.85 0.08 350;
+        --ring: 0.55 0.18 350;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-image: url('/assets/generated/pink-hearts-pattern-bg.dim_2048x2048.png');
+        background-size: 400px 400px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+}
+
+@layer utilities {
+    /* Screen transition utilities */
+    .screen-section {
+        @apply absolute inset-0 flex items-center justify-center z-10 transition-all duration-700;
+    }
+    
+    .screen-visible {
+        @apply opacity-100 translate-y-0 pointer-events-auto;
+    }
+    
+    .screen-hidden {
+        @apply opacity-0 -translate-y-8 pointer-events-none;
+    }
+    
+    /* Agreement message animation */
+    .agreement-message {
+        animation: slideInUp 0.5s ease-out;
+    }
+    
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Confetti animation */
+    .confetti-piece {
+        animation: confettiFall linear forwards;
+        border-radius: 2px;
+    }
+    
+    @keyframes confettiFall {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) rotate(720deg);
+            opacity: 0;
+        }
+    }
+    
+    /* Floating hearts */
+    .animate-float {
+        animation: float linear infinite;
+    }
+    
+    @keyframes float {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.3;
+        }
+        90% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: translateY(-100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+    
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+    
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+    
+    .delay-500 {
+        animation-delay: 0.5s;
+    }
+}
